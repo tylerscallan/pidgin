@@ -29,8 +29,10 @@
 
 #include <glib.h>
 
-#define JABBER_DATA_MAX_SIZE 8192
-
+/* 
+ * Arbirtary inline file transfer size limit of 8KiB changed to 100MiB
+ */
+#define JABBER_DATA_MAX_SIZE 104857600
 
 typedef struct {
 	char *cid;
